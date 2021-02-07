@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: #a8a3a3b9;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.bg-cut {
+  position: absolute;
+  width: 40%;
+  height: 400%;
+  opacity: 0.2;
+  background-color: #008B75;
+  left: 45%;
+  -webkit-transform: skewX(150deg);
+          transform: skewX(150deg);
+  z-index: -2;
+}
+
+.wave {
+  position: absolute;
+  top: 55%;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: -2;
+  padding: 0 4rem;
+}
+
+.header .navbar .nav__links {
+  padding: 4rem 4rem;
+}
+
+.header .navbar .nav__links .nav-link {
+  display: inline-block;
+  padding-left: 6rem;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.header .navbar .nav__links .nav-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header .navbar .nav__links .nav-link a:hover {
+  color: #0088a9;
+}
+
+.header .navbar .nav__links .cta {
+  display: inline-block;
+  padding-left: 6rem;
+}
+
+.header .navbar .nav__links .cta button {
+  background-color: #0088a9;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: white;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header .navbar .nav__links .cta button:hover {
+  background-color: rgba(0, 136, 169, 0.6);
+}
+
+.header #arrow-down a {
+  border: solid black;
+  display: inline-block;
+  border-width: 0 2px 2px 0;
+  padding: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 50%;
+  margin-top: 10%;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.header #arrow-down :hover {
+  -webkit-transform: rotate(45deg) scale(1.2);
+          transform: rotate(45deg) scale(1.2);
+}
+
+section.introduction {
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8rem 4rem 0 18rem;
+}
+
+section.introduction h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+section.introduction h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2rem 18rem;
+  list-style: none;
+}
+
+.social .linkedin {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.social .linkedin img {
+  height: 40px;
+  width: 40px;
+}
+
+.social .linkedin:hover {
+  opacity: 0.75;
+}
+
+#about-me {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about-me .about-box {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 2rem 4rem;
+}
+
+#about-me .about-box h1 {
+  font-weight: 200;
+}
+
+#about-me p {
+  line-height: 1.7;
+  padding: 2rem;
+  width: 40%;
+}
+
+.skills {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.skills .html {
+  height: 70%;
+}
+
+.skills .javascript {
+  height: 70%;
+}
+
+.skills .css {
+  height: 70%;
+}
+
+.skills .scss {
+  height: 70%;
+}
+
+.skills .figma {
+  height: 70%;
+}
+
+#projects {
+  height: 1vh;
+  border: 1px solid black;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+#contact form .input-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: none;
+}
+/*# sourceMappingURL=main.css.map */
