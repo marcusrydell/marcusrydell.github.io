@@ -16,12 +16,12 @@
         </svg> -->
     </div>
 
-    <!-- <header class="header">
+    <header class="header">
 
         <nav class="navbar">
             <ul class="nav__links">
-                
-                <li class="nav-link"><a href="#">Skills</a></li>
+
+                <li class="nav-link"><a href="#skills">Skills</a></li>
                 <li class="nav-link"><a href="#projects">Projects</a></li>
                 <a class="cta" href="#"><button>Contact</button></a>
             </ul>
@@ -42,7 +42,7 @@
 
 
 
-    <!-- <section id="about-me">
+    <section id="about-me">
         <div class="about-box">
             <h1>About me</h1>
         </div>
@@ -50,9 +50,9 @@
             Recently found a bigger interest in web development and design.
         </p>
 
-    </section> -->
+    </section>
 
-    <section class="skills">
+    <section id="skills">
         <svg class="html" width="256" height="361" viewBox="0 0 256 361" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M255.555 70.766L232.314 331.126L127.844 360.088L23.6618 331.166L0.444824 70.766H255.555Z"
                 fill="#E44D26" />
@@ -148,15 +148,29 @@
 
     </section>
     <section id="projects">
+        <h1>Projects</h1>
+
+        <div class="wastgotarna">
+            <div class="card">
+
+                <div class="front">
+                    <p></p>
+                </div>
+                <div class="back">
+                    
+                </div>
+            </div>
+        </div>
+
 
     </section>
 
     <section id="contact">
         <form action="https://formspree.io/f/xdopjpav" method="POST">
             <div class="input-fields">
-                <label><input type="text" name="_replyto" placeholder="Name"></label>
-                <label><input type="text" placeholder="Email"></label>
-                <label><textarea placeholder="Message" name="message"></textarea></label>
+                <label><input type="text" name="_replyto" placeholder="Name" required></label>
+                <label><input type="text" placeholder="Email" required></label>
+                <label><textarea placeholder="Message" name="message" required></textarea></label>
             </div>
 
             <button type="submit">Send</button>

@@ -15,7 +15,7 @@ body{
 .bg-cut{
     position: absolute;
     width: 40%;
-    height: 400%;
+    height: 270%;
     opacity: 0.2;
     background-color: #008B75;
     left: 45%;
@@ -160,9 +160,8 @@ section.introduction {
 
 }
 
-.skills{
+#skills{
     height: 30vh;
-   
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -185,24 +184,63 @@ section.introduction {
 }
 
 #projects{
-    height: 1vh;
+    height: 50vh;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+    .wastgotarna{
+        display: block;
+        height: 300px;
+        width: 220px;
+        padding: 2rem;
+       // outline: 1px solid red;
+    }
+
 }
 
 #contact{
     display: flex;
     justify-content: center;
     form{
-        display: flex;
-        border: none;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
+        padding: 2rem;
         .input-fields{
             display: flex;
             flex-direction: column;
-            border: none;
+            input[type=text]{
+                background-color: #fff;
+                padding: .8rem 1.4rem;
+                margin: 0.5rem;
+                border: none; 
+                width: 100%;
+            }
+            textarea{
+                border: none;
+                width: 100%;
+                
+                margin: 0.5rem;
+            }
+       }
+       button{
+           display: block;
+           background-color: rgba(0,136,169, 1);
+           cursor: pointer;
+           padding: 1rem;
+           width: 110%;
+           border: none;
+           border-radius: 50px;
+           color: white;
+           font-size: 1.6rem;
        }
     }
 
 }
+
+  
+

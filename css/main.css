@@ -19,7 +19,7 @@ body {
 .bg-cut {
   position: absolute;
   width: 40%;
-  height: 400%;
+  height: 270%;
   opacity: 0.2;
   background-color: #008B75;
   left: 45%;
@@ -199,7 +199,7 @@ section.introduction h1 {
   width: 40%;
 }
 
-.skills {
+#skills {
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,29 +212,53 @@ section.introduction h1 {
   padding: 2rem;
 }
 
-.skills .html {
+#skills .html {
   height: 70%;
 }
 
-.skills .javascript {
+#skills .javascript {
   height: 70%;
 }
 
-.skills .css {
+#skills .css {
   height: 70%;
 }
 
-.skills .scss {
+#skills .scss {
   height: 70%;
 }
 
-.skills .figma {
+#skills .figma {
   height: 70%;
 }
 
 #projects {
-  height: 1vh;
+  height: 50vh;
   border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects h1 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+#projects .wastgotarna {
+  display: block;
+  height: 300px;
+  width: 220px;
+  padding: 2rem;
 }
 
 #contact {
@@ -247,17 +271,7 @@ section.introduction h1 {
 }
 
 #contact form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 30%;
+  padding: 2rem;
 }
 
 #contact form .input-fields {
@@ -268,6 +282,31 @@ section.introduction h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#contact form .input-fields input[type=text] {
+  background-color: #fff;
+  padding: .8rem 1.4rem;
+  margin: 0.5rem;
   border: none;
+  width: 100%;
+}
+
+#contact form .input-fields textarea {
+  border: none;
+  width: 100%;
+  margin: 0.5rem;
+}
+
+#contact form button {
+  display: block;
+  background-color: #0088a9;
+  cursor: pointer;
+  padding: 1rem;
+  width: 110%;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */
