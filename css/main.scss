@@ -185,7 +185,6 @@ section.introduction {
 
 #projects{
     height: 50vh;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,19 +194,56 @@ section.introduction {
         font-size: 1.6rem;
         padding: 1rem;
     }
-    .wastgotarna{
-        display: block;
-        height: 300px;
-        width: 220px;
-        padding: 2rem;
-       // outline: 1px solid red;
+    .card-container{
+        position: relative;
+        height: 350px;
+        width: 250px;
+        .card{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.5s ease;
+            box-shadow: 0px 0px 21px 11px rgba(0,0,0,0.25);
+            text-align: center;
+            .front{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                background: rgba(255,255,255, 0.5);
+                color: #333;
+
+            }
+            .back{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                backface-visibility: hidden;
+                color: #333;
+                transform: rotateY(180deg);
+                p{
+                    margin-top: 8rem;
+                }
+            }
+        &:hover{
+            transform: rotateY(180deg);
+        }
+        }
     }
-
 }
-
+img{
+    position: relative;
+    transform: scale(0.5);
+    right: 6rem;
+    top: 2rem;
+}
 #contact{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
     form{
         padding: 2rem;
         .input-fields{
@@ -218,29 +254,102 @@ section.introduction {
                 padding: .8rem 1.4rem;
                 margin: 0.5rem;
                 border: none; 
-                width: 100%;
+                width: 50%;
+                border-radius: 4px;
             }
             textarea{
                 border: none;
-                width: 100%;
-                
+                width: 50%;
+                height: 5rem;
+                border-radius: 4px;
                 margin: 0.5rem;
             }
        }
        button{
-           display: block;
            background-color: rgba(0,136,169, 1);
            cursor: pointer;
            padding: 1rem;
-           width: 110%;
+           width: 30%;
            border: none;
            border-radius: 50px;
            color: white;
            font-size: 1.6rem;
        }
     }
-
 }
 
-  
+@media screen and (max-width: 768px){
+    *{
+        padding: 0;
+        margin: 0;
+
+    }
+    body{
+        width: 100%;
+        .bg-cut{
+            width: 50vw;
+        }
+    }
+    header{
+        height: 100vh;
+        justify-items: center;
+        align-items: center;
+        .navbar{
+            flex-direction: row;
+            width: 100vw;
+
+        }
+    
+        section.introduction{
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            h2{
+                font-size: 1rem;
+            }
+            h1{
+                font-size: 1.5rem;
+            }
+            h3{
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+        .social{
+            justify-content: center;
+            padding: 0;
+        }
+        .arrow-down{
+            
+        }
+    }
+    #about-me{
+        height: 100vh;
+        p{
+            width: 80%;
+        }
+    }
+    #skills{
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+        .html{
+            height: 50%;
+        }
+        .javascript{
+            height: 50%;
+        }
+        .css{
+            height: 50%;
+        }
+        .scss{
+            height: 50%; 
+        }
+        .figma{
+            height: 50%;
+        }
+    }
+}
 

@@ -234,7 +234,6 @@ section.introduction h1 {
 
 #projects {
   height: 50vh;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,11 +253,62 @@ section.introduction h1 {
   padding: 1rem;
 }
 
-#projects .wastgotarna {
-  display: block;
-  height: 300px;
-  width: 220px;
-  padding: 2rem;
+#projects .card-container {
+  position: relative;
+  height: 350px;
+  width: 250px;
+}
+
+#projects .card-container .card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0px 0px 21px 11px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 21px 11px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+#projects .card-container .card .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  color: #333;
+}
+
+#projects .card-container .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  color: #333;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#projects .card-container .card .back p {
+  margin-top: 8rem;
+}
+
+#projects .card-container .card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+img {
+  position: relative;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  right: 6rem;
+  top: 2rem;
 }
 
 #contact {
@@ -268,6 +318,11 @@ section.introduction h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 #contact form {
@@ -289,24 +344,107 @@ section.introduction h1 {
   padding: .8rem 1.4rem;
   margin: 0.5rem;
   border: none;
-  width: 100%;
+  width: 50%;
+  border-radius: 4px;
 }
 
 #contact form .input-fields textarea {
   border: none;
-  width: 100%;
+  width: 50%;
+  height: 5rem;
+  border-radius: 4px;
   margin: 0.5rem;
 }
 
 #contact form button {
-  display: block;
   background-color: #0088a9;
   cursor: pointer;
   padding: 1rem;
-  width: 110%;
+  width: 30%;
   border: none;
   border-radius: 50px;
   color: white;
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    width: 100%;
+  }
+  body .bg-cut {
+    width: 50vw;
+  }
+  header {
+    height: 100vh;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+  }
+  header section.introduction {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  header section.introduction h2 {
+    font-size: 1rem;
+  }
+  header section.introduction h1 {
+    font-size: 1.5rem;
+  }
+  header section.introduction h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  header .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+  #about-me {
+    height: 100vh;
+  }
+  #about-me p {
+    width: 80%;
+  }
+  #skills {
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+  #skills .html {
+    height: 50%;
+  }
+  #skills .javascript {
+    height: 50%;
+  }
+  #skills .css {
+    height: 50%;
+  }
+  #skills .scss {
+    height: 50%;
+  }
+  #skills .figma {
+    height: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
