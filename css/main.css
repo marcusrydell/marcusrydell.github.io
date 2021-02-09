@@ -389,9 +389,9 @@ img {
     display: none;
   }
   .header {
-    height: 100vh;
+    height: 60vh;
     text-align: center;
-    padding: 4rem 0;
+    padding: 8rem 0;
   }
   .header .navbar {
     display: -webkit-box;
@@ -445,14 +445,23 @@ img {
     background-image: url("/img/linkedin.svg");
   }
   .header #arrow-down {
-    margin-right: 7rem;
+    display: none;
   }
   #about-me {
-    height: 100vh;
+    height: 70vh;
+    padding: 0 !important;
+  }
+  #about-me .about-box {
+    padding: 0 !important;
+    border: none;
+  }
+  #about-me .about-box h1 {
+    font-size: 1rem;
   }
   #about-me p {
-    width: 80%;
+    width: 60%;
     padding: 0;
+    font-size: .8rem;
   }
   #skills {
     height: 30vh;
@@ -480,6 +489,72 @@ img {
   }
   #skills .figma {
     height: 30%;
+  }
+  #projects .card-container {
+    height: 200px;
+    width: 150px;
+  }
+  #projects .card-container .card .front {
+    background-size: 100px 80px;
+  }
+  #projects .card-container .card .back {
+    text-align: center;
+  }
+  #projects .card-container .card .back p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  #contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    height: 70vh;
+  }
+  #contact form {
+    padding: 2rem;
+  }
+  #contact form .input-fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact form .input-fields input[type=text] {
+    background-color: #fff;
+    padding: .8rem 1.4rem;
+    margin: 0.5rem;
+    border: none;
+    width: 50%;
+    border-radius: 4px;
+  }
+  #contact form .input-fields textarea {
+    border: none;
+    width: 50%;
+    height: 5rem;
+    border-radius: 4px;
+    margin: 0.5rem;
+  }
+  #contact form button {
+    background-color: #0088a9;
+    cursor: pointer;
+    padding: 1rem;
+    width: 50%;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.6rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

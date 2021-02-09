@@ -299,9 +299,9 @@ img{
     }
 
     .header{
-        height: 100vh;
+        height: 60vh;
         text-align: center;
-        padding: 4rem 0;
+        padding: 8rem 0;
         
         .navbar{
             display: flex;
@@ -347,14 +347,25 @@ img{
             }
         }
         #arrow-down{
-            margin-right: 7rem;
+            display: none;
         }
     }
     #about-me{
-        height: 100vh;
+        height: 70vh;
+        padding: 0 !important;
+        .about-box{
+            padding: 0 !important;
+            border: none;
+            h1{
+                font-size: 1rem;
+               
+            }
+
+        }
         p{
-            width: 80%;
+            width: 60%;
             padding: 0;
+            font-size: .8rem;
         }
     }
     #skills{
@@ -377,6 +388,64 @@ img{
         }
         .figma{
             height: 30%;
+        }
+    }
+    #projects{
+        .card-container{
+            height: 200px; 
+            width: 150px;
+            .card{
+                .front{
+                    background-size: 100px 80px; 
+                }
+                .back{
+                    text-align: center;
+                    p{
+                        margin-top: 1rem;
+                        font-size: 0.8rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 70vh;
+        form{
+            padding: 2rem;
+            .input-fields{
+                display: flex;
+                flex-direction: column;
+                input[type=text]{
+                    background-color: #fff;
+                    padding: .8rem 1.4rem;
+                    margin: 0.5rem;
+                    border: none; 
+                    width: 50%;
+                    border-radius: 4px;
+                }
+                textarea{
+                    border: none;
+                    width: 50%;
+                    height: 5rem;
+                    border-radius: 4px;
+                    margin: 0.5rem;
+                }
+           }
+           button{
+               background-color: rgba(0,136,169, 1);
+               cursor: pointer;
+               padding: 1rem;
+               width: 50%;
+               border: none;
+               border-radius: 50px;
+               color: white;
+               font-size: 1.6rem;
+           }
         }
     }
 }
