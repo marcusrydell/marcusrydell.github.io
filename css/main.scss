@@ -15,7 +15,7 @@ body{
 .bg-cut{
     position: absolute;
     width: 40%;
-    height: 270%;
+    height: 380%;
     opacity: 0.2;
     background-color: #008B75;
     left: 45%;
@@ -290,6 +290,7 @@ img{
     body{
         margin:0;
         padding: 0 !important;
+
     }
     html{
         overflow-x: hidden;
@@ -340,12 +341,7 @@ img{
                 font-size: 1rem;
             }
         }
-        .social{
-            
-            .linkedin{
-                background-image: url('/img/linkedin.svg');
-            }
-        }
+
         #arrow-down{
             display: none;
         }
